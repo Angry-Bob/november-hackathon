@@ -6,7 +6,7 @@ import image720 from '../assets/image_720.png';
 export const Matches = () => {
   return (
     <div className='background'>
-        <h1>MATCHES</h1>
+        <h1>MATCHES!</h1>
         <img src={image360} className='logoGA1' alt="" />
         <img src={image480} className='logoGA2' alt="" />
         <img src={image720} className='logoGA3' alt="" />
