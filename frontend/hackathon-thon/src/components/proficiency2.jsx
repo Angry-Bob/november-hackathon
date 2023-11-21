@@ -33,7 +33,6 @@ const Proficiency = () => {
   };
 
   const handleBack = () => {
-    // Go back to the /proficiency2 route
     navigate('/proficiency');
   };
 
