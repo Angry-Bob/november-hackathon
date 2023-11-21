@@ -29,6 +29,7 @@ const Proficiency = () => {
     // If all questions are answered, navigate to the /matches route
     if (currentQuestion === questions.length - 1) {
       navigate('/matches');
+      console.log('Thank you for submitting your answers!')
     }
   };
 
@@ -48,14 +49,14 @@ const Proficiency = () => {
           <h3>{questions[currentQuestion]}</h3>
           <div>
             {['A few weeks', '1-3 months', '3-6 months ', '6-12 months ','1+ years' ].map((value) => (
-              <button key={value} onClick={() => handleButtonClick(value)}>
+              <button className='Proficiency'  key={value} onClick={() => handleButtonClick(value)}>
                 {value}
               </button>
             ))}
           </div>
           
           {currentQuestion > 0 && (
-            <button onClick={handleBack}>Back</button>
+            <button className='Proficiency-Restart' onClick={handleBack}>Restart</button>
           )}
         </div>
       ) : (

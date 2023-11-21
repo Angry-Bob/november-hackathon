@@ -8,7 +8,7 @@ const Proficiency = () => {
   const [mongoProficiency, setMongoProficiency] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const navigate = useNavigate();
 
   const questions = [
     'What is your proficiency level on REACT?',
@@ -32,9 +32,6 @@ const Proficiency = () => {
       default:
         break;
     }
-  };
-
-  const handleSubmit = () => {
 
     // Move to the next question
     setCurrentQuestion(currentQuestion + 1);
@@ -47,7 +44,7 @@ const Proficiency = () => {
 
   const handleBack = () => {
     // Go back to the previous page
-    navigate('/'); // Use navigate with a negative number to go back
+    navigate('proficiency');
   };
 
   const progress = ((currentQuestion + 1) / questions.length) * 100; // Calculate progress percentage
@@ -62,15 +59,14 @@ const Proficiency = () => {
           <h3>{questions[currentQuestion]}</h3>
           <div>
             {[1, 2, 3, 4, 5].map((value) => (
-              <button key={value} onClick={() => handleButtonClick(value)}>
+              <button className='Proficiency' key={value} onClick={() => handleButtonClick(value)}>
                 {value}
               </button>
             ))}
           </div>
 
-          <button onClick={handleSubmit}>Submit</button>
           {currentQuestion > 0 && (
-            <button onClick={handleBack}>Back to SignUp</button>
+            <button className='Proficiency-Restart' onClick={handleBack}>Restart</button>
           )}
         </div>
       ) : (
