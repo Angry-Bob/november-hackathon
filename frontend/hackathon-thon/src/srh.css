@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: black;
+    padding: 0px;
+}
+#demobutton{
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    border-color: red;
+    border-width: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    text-justify: center;
+    background-color: white;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.demoInput{
+    border-radius: 10px;
+    height: 25px;
+    width: 250px;
+    background-color: red;
+    opacity: 50%;
+    border-color: red;
+    border-width: 2px;
+    margin: 5px;
+}
+#demosubmit{
+    margin: 10px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 2px;
+    width: 250px;
+    height: 30px;
+    font-family: 'Inter';
+    text-align: center;
+    text-justify: center;
+    justify-content: center;
+    font-size: 12px;
+    /* 
+    
+    width: 260px;
+    
+    margin-top: 70px;
+    
+    background-color: white;
+    font-family: 'Inter';
+    font-weight: bold; */
+}
+.field{
+    margin: 5px;
+    display: flex;
+    align-content: flex-start;
+}
+header {
+    display: flex;
+    margin: 0 auto;
+    /* background-image: url("./assets/headerbackground.jpg"); */
+    background-color: lightgray;
+    color: white;
+}
+#heading{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 30px;
+    margin: 2px;
+}
+
+h3{
+    margin: 10px;
+}
+
+.homeinput{
+    border-radius: 10px;
+    height: 25px;
+    width: 250px;
+    box-shadow: 10px 5px 5px gray;
+    border-color: white;
+    margin: 20px;
+}
+#prompt{
+    margin-top: 5px;
+    margin: 2px;
+}
+
+#signup{
+    display: flex;
+    align-content: flex-start;
+}
+
+#submit{
+    border-radius: 15px;
+    height: 35px;
+    width: 260px;
+    border-color: red;
+    border-width: 2px;
+    margin-top: 70px;
+    text-align: center;
+    text-justify: center;
+    background-color: white;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+#top{
+    margin-top: 1px;
+}

@@ -1,9 +1,11 @@
 import React from 'react'
+import '../srh.css'
 
 export default function Header () {
     return (
-        <div>
+        <header>
             <h1>sAGe</h1>
-        </div>
+            <img></img>
+        </header>
     )
 }
