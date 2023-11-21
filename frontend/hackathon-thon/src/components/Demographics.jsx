@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
 import '../srh.css'
+// import GA from '../assets/GA.png';
 
 const Demographics = () => {
     return (
         <div>
             <div id='top'>
-                <img></img>
+                {/* <div id = "logoImage"> */}
+                    {/* <img src={GA} className='DemoGAlogo' alt="" />
+                </div> */}
                 <h2 id='heading'>Tell us about yourself!</h2>
                 <h5 id = "prompt">We need a little information to help you connect with other people.</h5>
             </div>
