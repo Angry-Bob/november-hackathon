@@ -20,11 +20,15 @@ body {
 }
 
 .sage {
+   
     position: absolute;
     top: 90px;
 }
 .agBackground {
+    display: inline-block;
+    margin-bottom: 20px;
     background-color: #504E4E;
+    
 }
 .headerLogo45 {
     position: absolute;
@@ -95,6 +99,7 @@ body {
     justify-content: flex-end; 
 }
 header {
+    border: 7px solid #7D7C7C;
     display: flex;
     margin: 0 auto;
     height: 100px;
