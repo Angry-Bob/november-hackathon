@@ -1,53 +1,40 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
+import { useNavigate } from 'react-router-dom';
 import './Proficiency.css';
 
 const Proficiency = () => {
-  const [reactProficiency, setReactProficiency] = useState(0);
-  const [djangoProficiency, setDjangoProficiency] = useState(0);
-  const [mongoProficiency, setMongoProficiency] = useState(0);
+  const [codingTime, setCodingTime] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const navigate = useNavigate();
 
   const questions = [
-    'What is your proficiency level on REACT?',
-    'What is your proficiency level on Django?',
-    'What is your proficiency level on MANGO?',
+    'How much time have you invested into coding?',
   ];
 
-  const startMessages = ['Lets Start...', 'Next...', 'Next...'];
+  const startMessages = ['Finally...'];
 
   const handleButtonClick = (value) => {
     switch (currentQuestion) {
       case 0:
-        setReactProficiency(value);
-        break;
-      case 1:
-        setDjangoProficiency(value);
-        break;
-      case 2:
-        setMongoProficiency(value);
+        setCodingTime(value);
         break;
       default:
         break;
     }
-  };
-
-  const handleSubmit = () => {
 
     // Move to the next question
     setCurrentQuestion(currentQuestion + 1);
 
-    // If all questions are answered, navigate to the /proficiency2 route
+    // If all questions are answered, navigate to the /matches route
     if (currentQuestion === questions.length - 1) {
-      navigate('/proficiency2');
+      navigate('/matches');
     }
   };
 
   const handleBack = () => {
-    // Go back to the previous page
-    navigate(-1); // Use navigate with a negative number to go back
+    // Go back to the /proficiency2 route
+    navigate('/proficiency');
   };
 
   const progress = ((currentQuestion + 1) / questions.length) * 100; // Calculate progress percentage
@@ -61,14 +48,13 @@ const Proficiency = () => {
         <div>
           <h3>{questions[currentQuestion]}</h3>
           <div>
-            {[1, 2, 3, 4, 5].map((value) => (
+            {['A few weeks', '1-3 months', '3-6 months ', '6-12 months ','1+ years' ].map((value) => (
               <button key={value} onClick={() => handleButtonClick(value)}>
                 {value}
               </button>
             ))}
           </div>
-
-          <button onClick={handleSubmit}>Submit</button>
+          
           {currentQuestion > 0 && (
             <button onClick={handleBack}>Back</button>
           )}
