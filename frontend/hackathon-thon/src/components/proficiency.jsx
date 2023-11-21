@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
+import { useNavigate } from 'react-router-dom';
 import './Proficiency.css';
 
 const Proficiency = () => {
@@ -47,7 +47,7 @@ const Proficiency = () => {
 
   const handleBack = () => {
     // Go back to the previous page
-    navigate(-1); // Use navigate with a negative number to go back
+    navigate('/'); // Use navigate with a negative number to go back
   };
 
   const progress = ((currentQuestion + 1) / questions.length) * 100; // Calculate progress percentage
@@ -70,7 +70,7 @@ const Proficiency = () => {
 
           <button onClick={handleSubmit}>Submit</button>
           {currentQuestion > 0 && (
-            <button onClick={handleBack}>Back</button>
+            <button onClick={handleBack}>Back to SignUp</button>
           )}
         </div>
       ) : (
