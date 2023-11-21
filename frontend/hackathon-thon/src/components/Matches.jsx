@@ -11,7 +11,7 @@ export const Matches = () => {
         <img src={image480} className='logoGA2' alt="" />
         <img src={image720} className='logoGA3' alt="" />
         <div className='mentorsAndStudentsHeader'>
-        <h2>Students</h2> <h2>Mentors</h2>
+        <h2 className='students'>Students</h2> <h2 className='mentors'>Mentors</h2>
         </div>
         <div className='imgGrid'>
             <div>

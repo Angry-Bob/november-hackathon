@@ -8,6 +8,32 @@ body {
     padding: 0px;
     margin: 0 auto;
 }
+
+
+.rightBox {
+    position: relative;
+    top: 0px;
+    left: 200px;
+    background-color: #504E4E;
+    height: 80px;
+    width: 90px;
+}
+
+.sage {
+    position: absolute;
+    top: 90px;
+}
+.agBackground {
+    padding: -0px;
+    background-color: #504E4E;
+}
+.headerLogo45 {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    height: 50px;
+    width: 50px;
+}
 #demobutton{
     border-radius: 15px;
     height: 30px;
@@ -72,8 +98,9 @@ body {
 header {
     display: flex;
     margin: 0 auto;
+    height: 100px;
     /* background-image: url("./assets/headerbackground.jpg"); */
-    background-color: #7D7C7C;
+    background-color:#7D7C7C;
     color: white;
 }
 #heading{
