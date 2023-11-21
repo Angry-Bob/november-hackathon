@@ -11,7 +11,7 @@ const Home = () => {
                 <input type = "email" id = "email"></input>
                 <h3>Password</h3>
                 <input type = "password" id = "password"></input>
-                <button id = "submit">Save</button>
+                <Link to = './Demographics'><button id = "submit">Save</button></Link> 
             </div>
         </div>
     )
