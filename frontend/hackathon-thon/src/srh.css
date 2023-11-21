@@ -25,11 +25,11 @@ body {
     font-size: 12px;
     
 }
+
 /* .DemoGAlogo{
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    position: absolute;
+    top: 5%;
 } */
 .demoInput{
     border-radius: 10px;
