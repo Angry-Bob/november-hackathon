@@ -6,6 +6,7 @@ body {
     font-weight: bold;
     color: black;
     padding: 0px;
+    margin: 0 auto;
 }
 #demobutton{
     border-radius: 15px;
@@ -24,7 +25,12 @@ body {
     font-size: 12px;
     
 }
-
+/* .DemoGAlogo{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
 .demoInput{
     border-radius: 10px;
     height: 25px;
@@ -48,26 +54,26 @@ body {
     text-justify: center;
     justify-content: center;
     font-size: 12px;
-    /* 
-    
-    width: 260px;
-    
-    margin-top: 70px;
-    
-    background-color: white;
-    font-family: 'Inter';
-    font-weight: bold; */
 }
 .field{
     margin: 5px;
     display: flex;
     align-content: flex-start;
 }
+.GAlogo{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+#logo{
+    display: flex;
+    justify-content: flex-end; 
+}
 header {
     display: flex;
     margin: 0 auto;
     /* background-image: url("./assets/headerbackground.jpg"); */
-    background-color: lightgray;
+    background-color: #7D7C7C;
     color: white;
 }
 #heading{
@@ -89,6 +95,12 @@ h3{
     border-color: white;
     margin: 20px;
 }
+#logoImage{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
 #prompt{
     margin-top: 5px;
     margin: 2px;
