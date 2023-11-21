@@ -5,6 +5,20 @@
   text-align: center;
 }
 
+.imgMatches {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.imgGrid {
+  display: grid;
+  grid-template-columns: 2;
+}
+
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -17,6 +31,8 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+
 
 @keyframes logo-spin {
   from {
